@@ -1,5 +1,6 @@
 package self_study;
 
+//Kepler'in gezegensel hareket yasaları, Güneş Sisteminde bulunan gezegenlerin hareketlerini açıklayan üç matematiksel yasadır.
 import java.util.Scanner;
 public class Kepler {
 
