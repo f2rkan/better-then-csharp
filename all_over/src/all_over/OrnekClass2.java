@@ -12,6 +12,4 @@ public class OrnekClass2 {
 		else if(puan >= 122.4) System.out.println("puan: a2");
 		else System.out.println("puan: a3");
 	}
-	
-
 }
