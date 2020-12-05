@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Kepler {
 
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		
-		System.out.println("a: ");
-			double a = s.nextDouble();
-		System.out.println("b: ");
-			double b = s.nextDouble();
-		System.out.println("teta: ");
-			double teta = s.nextDouble();
+		try (Scanner s = new Scanner(System.in)) {
+			System.out.println("a: ");
+				double a = s.nextDouble();
+			System.out.println("b: ");
+				double b = s.nextDouble();
+			System.out.println("teta: ");
+				double teta = s.nextDouble();
+				
+			Kepler k = new Kepler();
 			
-		Kepler k = new Kepler();
-		
-		System.out.println("Eksentri: " + Eksentri(a, b));
-		System.out.println("Polar: " + k.Polar(a, b, teta));
+			System.out.println("Eksentri: " + Eksentri(a, b));
+			System.out.println("Polar: " + k.Polar(a, b, teta));
+		}
 	}
 	
 	public static double Eksentri(double q, double w)
