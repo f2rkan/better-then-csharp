@@ -1,5 +1,6 @@
 package all_over;
 
+//try'a dikkat
 import java.util.Scanner;
 public class mesafe_hesaplama {
 
@@ -13,11 +14,11 @@ public class mesafe_hesaplama {
 				System.out.println("sure gir, dakika cinsi: ");
 					int sure = keyboard.nextInt();
 			
-hesapla(hiz1, hiz2, sure);
-System.out.println(sure + " dk sonra iki arac arasi mesafe: " + hesapla2(hiz1, hiz2, sure) + " km");
+					hesapla(hiz1, hiz2, sure);
+					System.out.println(sure + " dk sonra iki arac arasi mesafe: " + hesapla2(hiz1, hiz2, sure) + " km");
 
-mesafe_hesaplama d = new mesafe_hesaplama();
-System.out.println(sure + " dk sonra iki arac arasi mesafe: " + d.hesapla3(hiz1, hiz2, sure) + " km");
+					mesafe_hesaplama d = new mesafe_hesaplama();
+					System.out.println(sure + " dk sonra iki arac arasi mesafe: " + d.hesapla3(hiz1, hiz2, sure) + " km");
 		}
 
 	}
