@@ -11,22 +11,22 @@ public class BankBalance2 {
 		int year = 1;
 		
 		final double INT_RATE = 0.03;
-		Scanner keyboard = new Scanner(System.in);
-		System.out.println("banka bakiyeni gir > ");
-		balance = keyboard.nextDouble();
-		keyboard.nextLine();
-		
-		do {
-			balance += balance * INT_RATE;
-			System.out.println(year + " yil sonra " + INT_RATE + " faiz oraniyla bakiyen $" + balance + " oluyor.");
-			year += 1;
-			System.out.println("gelecek yilki bakiyeni ogrenmek istiyor musun?");
-			System.out.println("hesaplanmasi icin 1'e");
-			System.out.print("aksi icin herhangi bir sayiyi tusla > ");
+		try (Scanner keyboard = new Scanner(System.in)) {
+			System.out.print("banka bakiyeni gir > ");
+			balance = keyboard.nextDouble();
+			keyboard.nextLine();
 			
-			response = keyboard.nextInt();
+			do {
+				balance += balance * INT_RATE;
+				System.out.println(year + " yil sonra " + INT_RATE + " faiz oraniyla bakiyen $" + balance + " oluyor.");
+				year += 1;
+				System.out.println("gelecek yilki bakiyeni ogrenmek istiyor musun?");
+				System.out.println("hesaplanmasi icin 1'e");
+				System.out.print("aksi icin herhangi bir sayiyi tusla > ");
+				
+				response = keyboard.nextInt();
+			}
+			while(response == 1);
 		}
-		while(response == 1);
 	}
-
 }
