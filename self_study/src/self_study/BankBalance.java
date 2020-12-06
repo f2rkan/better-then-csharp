@@ -18,7 +18,7 @@ public class BankBalance {
 				response = keyboard.nextInt();
 			while(response == 1)
 			{
-				balance = balance + balance * INT_RATE;
+				balance += balance * INT_RATE;
 				System.out.println(year + " yil sonra " + INT_RATE + " faiz oraniyla bakiyen $" + balance + " olacak.");
 				year += 1;
 				
