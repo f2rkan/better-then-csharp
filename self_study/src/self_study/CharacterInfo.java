@@ -24,7 +24,5 @@ public class CharacterInfo {
 		
 		if(Character.isWhitespace(aChar)) System.out.println(aChar + ", bosluk.");
 		else System.out.println(aChar + ", bosluk degil.");
-		
 	}
-
 }
