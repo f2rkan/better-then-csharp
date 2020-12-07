@@ -19,7 +19,11 @@ public class CharacterInfo {
 		aChar = Character.toUpperCase(aChar);
 		System.out.println("toUpperCase() sonrasi, aChar > " + aChar);
 		
+		if(Character.isLetterOrDigit(aChar)) System.out.println(aChar + ", harf ya da digit.");
+		else System.out.println(aChar + ", harf ya da digit degil.");
 		
+		if(Character.isWhitespace(aChar)) System.out.println(aChar + ", bosluk.");
+		else System.out.println(aChar + ", bosluk degil.");
 		
 	}
 
